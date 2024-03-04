@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+.pc-br {
+    display: block;
+}
+
+.sp-br {
+    display: none;
+}
+
+.title {
+    height: 260px;
+    background-image: url(../img/home/home.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #4b2c14;
+ 
+}
+
+
+
+.title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.contact{
+  width: 930px;
+  max-width: 90%;
+  margin-top: 75px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.form-area{
+  background-color: #f8f8f8;
+  border: 1px solid #aaaaaa;
+  margin-top: 25px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.form-text{
+  margin: 0px auto;
+}
+
+.form-radio{
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.form-area dt{
+  width: 200px;
+  padding: 15px 0;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.form-area dt .required::after{
+  content: '必須';
+  font-size: 11px;
+  color: #eb4f32;
+  margin-left: 10px;
+}
+
+.form-area dd{
+  width: calc(100% - 200px);
+  padding: 15px 0;
+}
+
+.input-text{
+  width: 100%;
+  max-width: 280px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.input-date{
+    width: 100%;
+    max-width: 280px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+.select-box{
+    width: 100%;
+    max-width: 280px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.radio-button{
+  display: block;
+  margin-top: 20px;
+}
+
+.radio-button:first-child{
+  margin-top: 0px;
+}
+
+.radio-button input{
+  margin-right: 8px;
+}
+
+.message{
+  width: 97%;
+  height: 260px;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.message1{
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  line-height: 1.5;
+  max-width: 280px;
+}
+
+.message2{
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+
+.submit-button-area {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.submit-button {
+  background-color: #fde1a8;
+  display: inline-block;
+  min-width: 180px;
+  line-height: 48px;
+  border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.submit-button:hover {
+  background-color: #a98030;
+}
+
+.mati{
+  width:100%;
+  margin-top:30px;
+  margin-bottom:30px;
+  height: 330px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.mati-list{
+  width: 100%;
+  height: 60px;
+  border-radius: 1rem;
+  margin-top: 5px;
+  background-color: rgb(255, 235, 213);
+  margin-bottom:0px;
+}
+
+.mati-list2{
+  width: 100%;
+  height: 60px;
+  border-radius: 1rem;
+  margin-top: 5px;
+  background-color: rgb(213, 253, 255);
+  margin-bottom:0px;
+}
+
+.mati-message{
+  margin-left:20px;
+  font-size: 22px;
+  padding-top : 20px ;
+}
+
+.output-text{
+  width: 100%;
+  max-width: 280px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top:12px;
+  background-color: #ffffff;
+  border: 1px solid #aaaaaa;
+}
+
+
+.item-button {
+  width: 800px;
+  max-width: 90%;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 240px);
+  column-gap: 50px;
+  row-gap: 70px;
+  justify-content: center;
+}
+.link-button-area {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+.link-button {
+  -webkit-appearance: none;
+  background-color: #fde1a8;
+  display: inline-block;
+  min-width: 180px;
+  line-height: 48px;
+  border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+.link-button:hover {
+  background-color: #a98030;
+}
+
+
+
+  @media (max-width: 800px) {
+    .sp-br {
+      display: block;
+    }
+  
+    .pc-br {
+      display: none;
+    }
+    
+    .item-list {
+        margin-top: 45px;
+        row-gap: 40px;
+    }
+
+    .lead {
+        width: 60%;
+        margin: 60px auto;
+        margin-bottom: 0px;
+    }
+    
+    .item-button {
+      margin-top: 0px;
+      row-gap: 0px;
+   }
+
+    .feature{
+      display: block;
+      width: 310px;
+      margin-top: 45px;
+   }
+
+   .feature-text{
+    margin-right: 0px;
+   }
+
+   .reverse .feature-text{
+    margin-left: 0px;
+   }
+
+   .feature img{
+    width: 100%;
+    height: auto;
+    margin-top:30px;
+  }
+
+  .form-area dt,
+  .form-area dd{
+    width: 100%;
+  }
+  .form-area2 dt,
+  .form-area2 dd{
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .contact {
+    margin-top:25px;
+  }
+  .contact h2{
+    font-size: 20px;
+  }
+
+  .confirm-text{
+    font-size: 12px;
+  }
+  .submit-button {
+    -webkit-appearance: none;
+    background-color: #fde1a8;
+    display: inline-block;
+    min-width: 180px;
+    line-height: 48px;
+    border-radius: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #000000 ;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+  }
+  .mati-message{
+    margin-left:20px;
+    font-size: 15px;
+    padding-top : 23px ;
+  }
+  .link-button-area {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .item-button{
+    margin-bottom: 30px;
+  }
+}

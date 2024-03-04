@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+.pc-br {
+    display: block;
+}
+
+.sp-br {
+    display: none;
+}
+
+.title {
+    height: 200px;
+    background-image: url(../img/home/fig1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 22px;
+    margin-top: 15px;
+    text-shadow: 1px 1px 15px #4b2c14;
+}
+
+.content{
+  width: 1150px;
+  max-width: 100%;
+  margin-top: 75px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.content h2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.content-text ul{
+  line-height: 35px;
+  list-style: decimal;
+}
+
+.content-text li{
+    margin-left: 25px;
+    color: #000000;               /* 文字色指定 */
+}
+.content-intext li{
+    margin-left: 50px;
+}
+.content-intext2 li{
+    margin-left: 70px;
+}
+
+.content-area{
+  
+  margin-top: 0px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  max-width:850px;
+}
+
+.content-text{
+    width:100%;
+    line-height: 25px;
+}
+
+.content-radio{
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.content-area dt{
+  width: 250px;
+  padding: 15px 0;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.content-area dt .required::after{
+  content: '必須';
+  font-size: 11px;
+  color: #eb4f32;
+  margin-left: 10px;
+}
+
+.content-area dd{
+  width: calc(100% - 250px);
+  padding: 15px 0;
+}
+
+.input-text{
+  width: 100%;
+  max-width: 280px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.message{
+  width: 97%;
+  height: 260px;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.content-area2{
+  background-color: #f8f8f8;
+  border: 1px solid #aaaaaa;
+  margin-top: 25px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-text2{
+  margin: 0px auto;
+}
+
+.content-radio2{
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.content-area2 dt{
+  width: 250px;
+  padding: 15px 0;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-left: 225px;
+}
+
+.content-area2 dt .required::after{
+  content: '必須';
+  font-size: 11px;
+  color: #eb4f32;
+  margin-left: 10px;
+}
+
+.content-area2 dd{
+  width: calc(100% - 475px);
+  padding: 15px 0;
+}
+
+.content-menu{
+  flex-shrink: 0;
+  margin-right: 60px;
+  position: relative;
+  margin-bottom:0px;
+}
+
+.content-menu h2{
+  margin-top: 55px;
+  
+}
+
+.content-menu-inner{
+  position: sticky;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
+
+.content-menu-inner li{
+  margin-top: 14px;
+}
+
+.content-menu-inner ul{
+    height:350px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+.item-list {
+  width: 930px;
+  max-width: 90%;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 240px);
+  column-gap: 50px;
+  row-gap: 70px;
+  justify-content: center;
+}
+.item-list li{
+display:block;
+transition-duration: 0.2s;
+}
+.item-list li:hover{
+
+}
+
+.item-list dl {
+  margin-top: 20px;
+}
+
+.item-list dt {
+  font-weight: bold;
+}
+
+.item-list li {
+  position: relative;
+}
+
+
+
+
+  @media (max-width: 800px) {
+    .sp-br {
+      display: block;
+    }
+  
+    .pc-br {
+      display: none;
+    }
+    .content-text ul{
+        list-style: block;
+      }   
+
+  .content{
+    display: block;
+    margin-top: 20px;
+  }
+
+  .content-area{
+    max-width: 100%;
+    margin-top: 0px;
+  }
+
+  .content-text ul{
+    line-height: 29px;
+    list-style: decimal;
+  }
+
+  .content-area dt,
+  .content-area dd{
+    width: 100%;
+  }
+  .content-area2 dt,
+  .content-area2 dd{
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .contact h2{
+    font-size: 20px;
+  }
+
+  .content-menu{
+    margin-left: 30px;
+  }
+
+  .submit-button {
+    -webkit-appearance: none;
+    background-color: #ffe669;
+    display: inline-block;
+    min-width: 180px;
+    line-height: 48px;
+    border-radius: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #000000 ;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+  }
+
+  .item-list {
+      grid-template-columns: repeat(2, 140px);
+      width: 90%;
+      margin-top: 45px;
+      row-gap: 0px;
+  }
+
+  .item-list dl {
+    margin-top: 0px;
+  }
+
+  .item-list dt {
+    margin-top: 0px;
+  }
+}

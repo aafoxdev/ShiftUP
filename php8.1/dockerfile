@@ -1,0 +1,17 @@
+FROM php:8.1-apache
+# パッケージ情報を更新し、必要なパッケージをインストール
+RUN apt-get update && apt-get install -y \
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
+        libpng-dev \
+        libpq-dev \
+    && docker-php-ext-install -j$(nproc) iconv \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j$(nproc) gd \
+    && docker-php-ext-install pdo_mysql \
+    && docker-php-ext-install mysqli \
+    && apt-get install -y python3 python3-pip python3-venv \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* 
+RUN python3 -m venv /venv \
+ && /venv/bin/pip install --no-cache-dir pulp pandas jpbizday

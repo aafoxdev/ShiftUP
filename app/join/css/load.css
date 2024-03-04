@@ -1,0 +1,49 @@
+/* Loading Block */
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #fee1a9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.spinner {
+  width: 100px;
+  height: 100px;
+  margin: 0px auto;
+  border-radius: 50%;
+  border: 12px solid #fafafa;
+  margin-bottom: 20px;
+  border-top: 12px solid #fee1a9;
+  animation: spin 1s linear infinite;
+}
+
+
+/* Loading Animation */
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  65%{
+    transform: rotate(180deg);
+    opacity: 0.4;
+  }
+  100%{
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+/* Hide Loading Block */
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
