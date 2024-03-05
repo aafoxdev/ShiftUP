@@ -38,10 +38,10 @@ SHIFTUPは、2023年10月～2024年2月ごろに大学のPBL演習の題目と�
 
 本システムの動作検証をローカルでする場合、Dockerを用いれば比較的簡単に可能です。具体的には次の手順を踏むことで写真のような環境を構築します。
 ```
-#!/bin/bash
 $ git clone https://github.com/aafoxdev/ShiftUP.git
 $ cd ShiftUP
 $ chmod +x ./docker-up.sh
+$ ./docker-up.sh
 ```
 なおこの作業により、SQLが実行されmembersとmessagesのテーブルが自動作成されます。ログインするときはつぎの内容を入力してください。
 - ユーザー用の業務員番号：0001
